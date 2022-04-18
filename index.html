@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main_navbar">
+        <nav id="navbar">
+            <header class="title">JS Documentación</header>
+                    <ul class="menu">
+                        <li><a class="nav-link" href="#Introduccion"> Introduccion</a> </li>
+                        <li><a class="nav-link" href="#Lo_que_ya_deberias_saber"> Lo que ya deberias saber</a></li>
+                        <li><a class="nav-link" href="#Javascript_and_Java"> Javascript and Java</a></li>
+                        <li><a class="nav-link" href="#Hello_world"> Hello world </a></li>
+                        <li><a class="nav-link" href="#Variables"> Variables </a></li>
+                        <li><a class="nav-link" href="#Declarar_variables"> Declarar variables </a></li>
+                    </ul>
+        </nav>
+    </div>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+                    <article>
+                        <p>JavaScript es un lenguaje de scripting multiplataforma orientado a objetos. Es un lenguaje pequeño y ligero. Dentro de un entorno host (por ejemplo, un navegador web), JavaScript se puede conectar a los objetos de su entorno para proporcionar control programático sobre ellos.</p>
+
+                        <p>JavaScript contiene una biblioteca estándar de objetos, como Array, Date y Math, y un conjunto básico de elementos de lenguaje como operadores, estructuras de control y sentencias. Core JavaScript se puede ampliar para una variedad de propósitos complementándolo con objetos adicionales; por ejemplo:</p>
+                                <ul>
+                                    <li>JavaScript del lado del cliente amplía el lenguaje principal suministrando objetos para controlar un navegador y su modelo de objeto de documento (DOM). Por ejemplo, las extensiones del lado del cliente permiten a una aplicación colocar elementos en un formulario HTML y responder a eventos del usuario como los clics del ratón, la entrada del formulario y la navegación por la página.</li>
+
+                                    <li>JavaScript del lado del servidor amplía el lenguaje principal proporcionando objetos relevantes para ejecutar JavaScript en un servidor. Por ejemplo, las extensiones del lado del servidor permiten a una aplicación comunicarse con una base de datos, proporcionar continuidad de la información de una invocación a otra de la aplicación o realizar manipulaciones de archivos en un servidor.</li>
+                                </ul>
+                    </article>
+
+        </section>
+        <section class="main-section" id="Lo_que_ya_deberias_saber">
+            <header>Lo que ya deberias saber</header>
+            <article>
+                <p>Esta guía asume que tienes los siguientes antecedentes básicos:</p>
+                <ul>
+                    <li>Una comprensión general de Internet y la World Wide Web (WWW).</li>
+                    <li>Buen conocimiento práctico del lenguaje de marcado de hipertexto (HTML)..</li>
+                    <li>Algo de experiencia en programación. Si eres nuevo en la programación, prueba uno de los tutoriales enlazados en la página principal sobre JavaScript.</li>
+                </ul>
+            </article>
+
+        </section>
+        <section class="main-section" id="Javascript_and_Java">
+            <header>JavaScript and Java</header>
+            <article>
+                <p>JavaScript y Java son similares en algunos aspectos, pero fundamentalmente diferentes en otros. El lenguaje JavaScript se parece a Java, pero no tiene la escritura estática de Java ni una fuerte comprobación de tipo. JavaScript sigue la mayoría de la sintaxis de expresiones de Java, convenciones de nomenclatura y construcciones básicas de flujo de control, que fue la razón por la que se renombró de LiveScript a JavaScript.</p>
+
+                <p>A diferencia del sistema de clases en tiempo de compilación de Java construido por declaraciones, JavaScript admite un sistema en tiempo de ejecución basado en un pequeño número de tipos de datos que representan valores numéricos, booleanos y de cadena. JavaScript tiene un modelo de objetos basado en prototipos en lugar del modelo de objetos basado en clases más común. El modelo basado en prototipos proporciona herencia dinámica; es decir, lo que se hereda puede variar para los objetos individuales. JavaScript también admite funciones sin ningún requisito declarativo especial. Las funciones pueden ser propiedades de objetos, ejecutándose como métodos de tipo suelto.</p>
+                <p>JavaScript es un lenguaje muy libre en comparación con Java. No es necesario declarar todas las variables, clases y métodos. No tienes que preocuparte por si los métodos son públicos, privados o protegidos, y no tienes que implementar interfaces. Las variables, los parámetros y los tipos de retorno de funciones no se escriben explícitamente.</p>
+            </article>
+
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                <p>Para empezar a escribir JavaScript, abre el Scratchpad y escribe tu primer código JavaScript "Hola mundo":</p>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }</code> <br>
+                    <code> greetMe("World");</code>
+                <p>¡Selecciona el código en el pad y pulsa Ctrl+R para verlo desarrollarse en tu navegador!</p>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Utiliza variables como nombres simbólicos para los valores de su aplicación. Los nombres de las variables, llamados identificadores, se ajustan a ciertas reglas.</p>
+
+                <p>Un identificador de JavaScript debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($); los caracteres posteriores también pueden ser dígitos (0-9). Debido a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres "A" a "Z" (mayúsculas) y los caracteres "a" a "z" (minúsculas).</p>
+
+                <p>Puedes usar letras ISO 8859-1 o Unicode como å y ü en los identificadores. También puedes usar las secuencias de escape Unicode como caracteres en los identificadores. Algunos ejemplos de nombres legales son Number_hits, temp99 y _name.</p>
+            </article>
+
+        </section>
+        <section class="main-section" id="Declarar_variables">
+            <header>Declarar variables</header>
+            <article>
+                <p>Puedes declarar una variable de tres maneras:</p>
+                <p>Con la palabra clave var. Por ejemplo,</p>
+                <code>var x = 42.</code>
+                <p>Esta sintaxis se puede utilizar para declarar variables locales y globales.</p>
+                <p>Simplemente asignándole un valor. Por ejemplo,</p>
+                <code> x= 42. </code>
+                <p>Esto siempre declara una variable global. Genera una estricta advertencia de JavaScript. No deberías usar esta variante.</p>
+                <p>Con la palabra clave let. Por ejemplo,</p>
+                <code> let y = 13. </code>
+                <p>Esta sintaxis se puede utilizar para declarar una variable local de ámbito de bloque. Consulta el ámbito variable a continuación.</p>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+</html>
